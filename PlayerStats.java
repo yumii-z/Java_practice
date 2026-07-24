@@ -78,6 +78,8 @@ System.out.println();
     System.out.println("Defense: " + defense);
     System.out.println("Weapon: " + weapon);
     System.out.println("===============================");
+System.out.println("");
+    
         }
 
         else {
@@ -87,6 +89,31 @@ System.out.println();
 System.out.println("Please try again.");
 
         }
+
+        System.out.println("What would you like to do?");
+System.out.println();
+    System.out.println("1.Train");
+    System.out.println("2.Rest");
+    System.out.println("3.View Stats");
+    System.out.println("4.Exit");
+System.out.println();
+    String playerChoose = input.nextLine();
+        if (playerChoose.equalsIgnoreCase("Train")) {
+        System.out.println();
+     System.out.println("You gained");
+    System.out.println("Attack +2");
+    System.out.println("Defense +1");
+            attack = attack + 2;
+            defense = defense + 1;
+    }
+       else if (playerChoose.equalsIgnoreCase("Rest")) {
+        System.out.println();
+    System.out.println("Successfully recovered health and mana!");
+       }
+
+        else { System.out.println ("Error"); 
+    }
+
         
 
     input.close();
